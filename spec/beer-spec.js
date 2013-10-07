@@ -21,7 +21,7 @@ describe('Pint', function() {
 		expect(pint.quantity).toEqual(20);
 	});
 	it('The glass should be 20 fl. oz. in capacity', function () {
-		expect(pint.maxVolume).toEqual(20);
+		expect(pint.capacity).toEqual(20);
 	});
 });
 
@@ -37,7 +37,7 @@ describe('HalfPint', function() {
 	});
 
 	it('The glass should be 10 fl. oz. in capacity', function () {
-		expect(halfPint.maxVolume).toEqual(10);
+		expect(halfPint.capacity).toEqual(10);
 	});
 });
 
@@ -49,7 +49,7 @@ describe('Jug', function () {
 	});
 
 	it('It is served as 3 pints (60 fl. oz.)', function () {
-		expect(jug.maxVolume).toEqual(60);
+		expect(jug.capacity).toEqual(60);
 	});
 
 });

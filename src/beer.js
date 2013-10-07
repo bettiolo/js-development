@@ -2,7 +2,7 @@ var Glass = function () {
 
 	function Glass(maxVolume) {
 		this.quantity = 0;
-		this.maxVolume = maxVolume;
+		this.capacity = maxVolume;
 	}
 
 	Glass.prototype.consume = function (quantityInOz) {
