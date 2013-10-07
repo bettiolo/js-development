@@ -1,11 +1,11 @@
-describe("A new glass", function() {
+describe('A new glass', function() {
 	var glass;
 
 	beforeEach(function() {
 		glass = new Glass();
 	});
 
-	it("is empty", function() {
+	it('is empty', function() {
 		expect(glass.quantity).toEqual(0);
 	});
 });
@@ -54,7 +54,7 @@ describe('Jug', function () {
 
 });
 
-describe("Customer", function() {
+describe('Customer', function() {
 	var customer,
 		halfPint,
 		pint,
@@ -67,7 +67,7 @@ describe("Customer", function() {
 		jug = new Jug();
 	});
 
-	it("Every time the customer drinks, 1 fluid ounce is consumed", function() {
+	it('Every time the customer drinks, 1 fluid ounce is consumed', function() {
 		customer.drink(halfPint);
 		customer.drink(pint);
 		customer.drink(jug);
@@ -77,7 +77,7 @@ describe("Customer", function() {
 		expect(jug.quantity).toEqual(59);
 	});
 
-	it("Every time the customer quaffs, 4 fluid ounces are consumed", function() {
+	it('Every time the customer quaffs, 4 fluid ounces are consumed', function() {
 		customer.quaff(halfPint);
 		customer.quaff(pint);
 		customer.quaff(jug);
@@ -87,7 +87,7 @@ describe("Customer", function() {
 		expect(jug.quantity).toEqual(56);
 	});
 
-	it("Every time customer downs in one, the entire remaining contents of the glass are consumed", function(){
+	it('Every time customer downs in one, the entire remaining contents of the glass are consumed', function(){
 		customer.downInOne(halfPint);
 		customer.downInOne(pint);
 		customer.downInOne(jug);
