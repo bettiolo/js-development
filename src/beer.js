@@ -1,7 +1,7 @@
 var Glass = function () {
 
 	function Glass(maxVolume) {
-		this._maxVolume = maxVolume || 0;
+		this._maxVolume = maxVolume;
 		this._volume = 0;
 	}
 
@@ -12,8 +12,8 @@ var Glass = function () {
 		volume : function () {
 			return this._volume;
 		},
-		consume : function (quantity) {
-			this._volume -= quantity;
+		consume : function (quantityInOz) {
+			this._volume -= quantityInOz;
 		}
 	};
 
