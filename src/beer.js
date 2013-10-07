@@ -1,12 +1,12 @@
 var Glass = function () {
 
 	function Glass(maxVolume) {
-		this.volume = 0;
+		this.quantity = 0;
 		this.maxVolume = maxVolume;
 	}
 
 	Glass.prototype.consume = function (quantityInOz) {
-		this.volume -= quantityInOz;
+		this.quantity -= quantityInOz;
 	};
 
 	return Glass;
@@ -16,7 +16,7 @@ var Pint = function () {
 
 	function Pint() {
 		Glass.call(this, 20);
-		this.volume = 20;
+		this.quantity = 20;
 	}
 
 	Pint.prototype = new Glass();
@@ -29,7 +29,7 @@ var HalfPint = function () {
 
 	function HalfPint() {
 		Glass.call(this, 10)
-		this.volume = 10;
+		this.quantity = 10;
 	}
 
 	HalfPint.prototype = new Glass();
@@ -55,16 +55,14 @@ var Customer = function () {
 
 	}
 
-	Customer.prototype = {
-		drink: function (glass) {
-			glass.consume(1);
-		},
-		quaff: function (glass) {
-			glass.consume(4);
-		},
-		downInOne : function (glass) {
-			glass.consume(20);
-		}
+	Customer.prototype.drink = function (glass) {
+		glass.consume(1);
+	};
+	Customer.prototype.quaff = function (glass) {
+		glass.consume(4);
+	};
+	Customer.prototype.downInOne = function (glass) {
+		glass.consume(20);
 	};
 
 	return Customer;
