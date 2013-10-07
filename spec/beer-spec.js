@@ -55,28 +55,46 @@ describe('Jug', function () {
 });
 
 describe("Customer", function() {
-	var customer;
-	var pint;
+	var customer,
+		halfPint,
+		pint,
+		jug;
 
 	beforeEach(function() {
 		customer = new Customer();
+		halfPint = new HalfPint();
 		pint = new Pint();
+		jug = new Jug();
 	});
 
 	it("Every time the customer drinks, 1 fluid ounce is consumed", function() {
+		customer.drink(halfPint);
 		customer.drink(pint);
+		customer.drink(jug);
 
+		expect(halfPint.quantity).toEqual(9);
 		expect(pint.quantity).toEqual(19);
+		expect(jug.quantity).toEqual(59);
 	});
 
 	it("Every time the customer quaffs, 4 fluid ounces are consumed", function() {
+		customer.quaff(halfPint);
 		customer.quaff(pint);
+		customer.quaff(jug);
+
+		expect(halfPint.quantity).toEqual(6);
 		expect(pint.quantity).toEqual(16);
+		expect(jug.quantity).toEqual(56);
 	});
 
 	it("Every time customer downs in one, the entire remaining contents of the glass are consumed", function(){
+		customer.downInOne(halfPint);
 		customer.downInOne(pint);
+		customer.downInOne(jug);
+
+		expect(halfPint.quantity).toEqual(0);
 		expect(pint.quantity).toEqual(0);
+		expect(jug.quantity).toEqual(0);
 	});
 });
 

@@ -42,6 +42,7 @@ var Jug = function(){
 
 	function Jug(){
 		Glass.call(this, 60);
+		this.quantity = 60;
 	}
 
 	Jug.prototype = new Glass();
@@ -51,6 +52,7 @@ var Jug = function(){
 }();
 
 var Customer = function () {
+
 	function Customer() {
 
 	}
@@ -62,7 +64,7 @@ var Customer = function () {
 		glass.consume(4);
 	};
 	Customer.prototype.downInOne = function (glass) {
-		glass.consume(20);
+		glass.consume(glass.quantity);
 	};
 
 	return Customer;
