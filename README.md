@@ -1,10 +1,10 @@
 js-development
 ============
 
-Javascript development workflow and tools
+JavaScript development workflow and tools
 
 Examples included:
-- Object Oriented JS with prototypal inheritance and base constructors with parameters
+- Object Oriented js with prototypal inheritance and base constructors with parameters
 - Jasmine spec & test runner
 
 Todo:
