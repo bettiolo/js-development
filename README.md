@@ -17,5 +17,5 @@ Todo:
 - Grunt for automatic building
 - JsLint for js checking
 - CssLint for css checking
-- UglifyJs for minifying js
+- UglifyJs for minifying js + sourcemaps
 - Mocha + PhantomJs for headless browser testing
