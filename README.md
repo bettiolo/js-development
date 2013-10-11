@@ -11,7 +11,7 @@ Todo:
 - Travis-cs for automatically running tests on push
 - RequireJs for dependencies
 - [EditorConfig](http://editorconfig.org) for cross-editor consistency
-- JsHint for explicit style
+- JsHint(rc) for explicit style
 - Karma test runner
 - Grunt for automatic building
 - JsLint for js checking
