@@ -14,7 +14,7 @@ Todo:
   - JsHint(rc) for explicit style
   - [Bower](https://github.com/bower/bower) package manager
   - Karma test runner
-  - Grunt for automatic building
+  - Grunt task runner
   - JsLint for js checking
   - CssLint for css checking
   - UglifyJs for minifying js + sourcemaps
@@ -24,3 +24,4 @@ Todo:
 Other:
   - [Local Tunnel](http://progrium.com/localtunnel) for sharing local web server (ex. testing on mobile device)
   - LiveReload extension for Chrome
+  - CodeKit
