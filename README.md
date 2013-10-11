@@ -21,4 +21,4 @@ Todo:
   - Mocha + PhantomJs for headless browser testing
 
 Other:
-  - [Local Tunnel](http://progrium.com/localtunnel)
+  - [Local Tunnel](http://progrium.com/localtunnel) for sharing local web server (ex. testing on mobile device)
