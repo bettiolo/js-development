@@ -12,6 +12,7 @@ Todo:
 - RequireJs for dependencies
 - [EditorConfig](http://editorconfig.org) for cross-editor consistency
 - JsHint(rc) for explicit style
+- [Bower](https://github.com/bower/bower) package manager
 - Karma test runner
 - Grunt for automatic building
 - JsLint for js checking
