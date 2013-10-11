@@ -5,7 +5,7 @@ JavaScript development workflow and tools
 
 Examples included:
 - Object Oriented js with prototypal inheritance and base constructors with parameters
-- Jasmine spec & test runner
+- Jasmine spec & test runner for unit testing
 
 Todo:
 - Travis-cs for automatically running tests on push
@@ -17,3 +17,4 @@ Todo:
 - JsLint for js checking
 - CssLint for css checking
 - UglifyJs for minifying js
+- Mocha + PhantomJs for headless browser testing
