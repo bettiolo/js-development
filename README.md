@@ -19,6 +19,7 @@ Todo:
   - CssLint for css checking
   - UglifyJs for minifying js + sourcemaps
   - Mocha + PhantomJs for headless browser testing
+  - Keyboard Shortcuts
 
 Other:
   - [Local Tunnel](http://progrium.com/localtunnel) for sharing local web server (ex. testing on mobile device)
