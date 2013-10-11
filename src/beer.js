@@ -19,7 +19,7 @@ var Pint = function () {
 		this.quantity = 20;
 	}
 
-	Pint.prototype = new Glass();
+	Pint.prototype = Object.create(Glass.prototype);
 	Pint.prototype.constructor = Pint;
 
 	return Pint;
@@ -32,7 +32,7 @@ var HalfPint = function () {
 		this.quantity = 10;
 	}
 
-	HalfPint.prototype = new Glass();
+	HalfPint.prototype = Object.create(Glass.prototype);
 	HalfPint.prototype.constructor = HalfPint;
 
 	return HalfPint;
@@ -45,7 +45,7 @@ var Jug = function(){
 		this.quantity = 60;
 	}
 
-	Jug.prototype = new Glass();
+	Jug.prototype = Object.create(Glass.prototype);
 	Jug.prototype.constructor = Jug;
 
 	return Jug;
