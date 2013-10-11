@@ -23,3 +23,4 @@ Todo:
 
 Other:
   - [Local Tunnel](http://progrium.com/localtunnel) for sharing local web server (ex. testing on mobile device)
+  - LiveReload extension for Chrome
