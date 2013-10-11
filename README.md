@@ -9,7 +9,7 @@ Examples included:
 
 Todo:
 - Travis-cs for automatically running tests on push
-- RequireJs for dependencies
+- AMD support via RequireJs for dependencies
 - [EditorConfig](http://editorconfig.org) for cross-editor consistency
 - JsHint(rc) for explicit style
 - [Bower](https://github.com/bower/bower) package manager
