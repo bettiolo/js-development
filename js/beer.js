@@ -68,7 +68,7 @@ var Jug = function () {
 
 var Customer = function () {
 
-   	/** @constructor */
+    /** @constructor */
 	function Customer() {
 
 	}
