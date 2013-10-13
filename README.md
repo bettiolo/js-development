@@ -14,17 +14,17 @@ Examples included:
   - [EditorConfig](http://editorconfig.org) for cross-editor consistency
     - [Properties reference](https://github.com/editorconfig/editorconfig/wiki/EditorConfig-Properties)
   - RequireJs dependencies management
-  - [JsTestDriver](https://code.google.com/p/js-test-driver/) support for running tests in multiple browsers
+  - [JsTestDriver](https://code.google.com/p/js-test-driver/) support for running unit tests in multiple browsers
     - [jsTestDriver.conf](https://code.google.com/p/js-test-driver/wiki/ConfigurationFile)
     - [Jasmine JsTestDriver Adapter](https://github.com/ibolmo/jasmine-jstd-adapter)
 
 Todo:
+  - PhantomJs bor headless unit test running
   - Travis-cs for automatically running tests on push
   - AMD / ES6 Module support via RequireJs
   - [Bower](https://github.com/bower/bower) package manager
   - Karma test runner
   - Grunt task runner
-  - CssLint for css checking
   - UglifyJs for minifying js + sourcemaps
   - Mocha + PhantomJs for headless browser testing
   - Keyboard Shortcuts
