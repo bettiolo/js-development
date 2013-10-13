@@ -8,10 +8,11 @@ Examples included:
   - Jasmine spec & test runner for unit testing
   - JsHint for enforcing coding style with .jshintrc
   - JsDoc for documenting
-    - (Closure Compiler type syntax)[https://developers.google.com/closure/compiler/docs/js-for-compiler#types]
-    - (Tags reference)[http://usejsdoc.org/index.html]
+    - [Closure Compiler type syntax](https://developers.google.com/closure/compiler/docs/js-for-compiler#types)
+    - [Tags reference](http://usejsdoc.org/index.html)
   - [EditorConfig](http://editorconfig.org) for cross-editor consistency
-    - (Properties reference)[https://github.com/editorconfig/editorconfig/wiki/EditorConfig-Properties]
+    - [Properties reference](https://github.com/editorconfig/editorconfig/wiki/EditorConfig-Properties)
+  - RequireJs dependencies management
 
 Todo:
   - Travis-cs for automatically running tests on push
