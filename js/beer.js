@@ -1,93 +1,68 @@
-var Glass = function () {
+/**
+ * @constructor
+ * @param {number} capacityInOz The capacity of the glass in oz.
+ * @abstract
+ */ // Should be @inner?
+function Glass(capacityInOz) {
+    this.quantity = 0;
+    this.capacity = capacityInOz;
+}
 
-	/**
-	 * @constructor
-	 * @param {number} capacityInOz - The capacity of the glass in oz.
-	 * @abstract
-	 */ // Should be @inner?
-	function Glass(capacityInOz) {
-		this.quantity = 0;
-		this.capacity = capacityInOz;
-	}
+Glass.prototype.constructor = Glass;
+Glass.prototype.consume = function (quantityInOz) {
+    this.quantity -= quantityInOz;
+};
 
-	Glass.prototype.constructor = Glass;
-	Glass.prototype.consume = function (quantityInOz) {
-		this.quantity -= quantityInOz;
-	};
+/**
+ * @constructor
+ * @extends {Glass}
+ */
+function Pint() {
+    Glass.call(this, volumeInOz.PINT);
+    this.quantity = volumeInOz.PINT;
+}
 
-	return Glass;
-}();
+Pint.prototype = Object.create(Glass.prototype);
+Pint.prototype.constructor = Pint;
 
-var Pint = function () {
+/**
+ * @constructor
+ * @extends {Glass}
+ */
+function HalfPint() {
+    Glass.call(this, volumeInOz.HALF_PINT);
+    this.quantity = volumeInOz.HALF_PINT;
+    this.test = 'test';
+}
 
-	/**
-	 * @constructor
-	 * @extends {Glass}
-	 */
-	function Pint() {
-		Glass.call(this, volumeInOz.PINT);
-		this.quantity = volumeInOz.PINT;
-	}
+HalfPint.prototype = Object.create(Glass.prototype);
+HalfPint.prototype.constructor = HalfPint;
 
-	Pint.prototype = Object.create(Glass.prototype);
-	Pint.prototype.constructor = Pint;
+function Jug(){
+    Glass.call(this, volumeInOz.JUG);
+    this.quantity = volumeInOz.JUG;
+}
 
-	return Pint;
-}();
+Jug.prototype = Object.create(Glass.prototype);
+Jug.prototype.constructor = Jug;
 
-var HalfPint = function () {
+/** @constructor */
+function Customer() {
 
-	/**
-	 * @constructor
-	 * @extends {Glass}
-	 */
-	function HalfPint() {
-		Glass.call(this, volumeInOz.HALF_PINT);
-		this.quantity = volumeInOz.HALF_PINT;
-		this.test = 'test';
-	}
+}
 
-	HalfPint.prototype = Object.create(Glass.prototype);
-	HalfPint.prototype.constructor = HalfPint;
-
-	return HalfPint;
-}();
-
-var Jug = function () {
-
-	function Jug(){
-		Glass.call(this, volumeInOz.JUG);
-		this.quantity = volumeInOz.JUG;
-	}
-
-	Jug.prototype = Object.create(Glass.prototype);
-	Jug.prototype.constructor = Jug;
-
-	return Jug;
-}();
-
-var Customer = function () {
-
-    /** @constructor */
-	function Customer() {
-
-	}
-
-	/** @param {Glass} glass */
-	Customer.prototype.drink = function (glass) {
-		glass.consume(1);
-	};
-	/** @param {Glass} glass */
-	Customer.prototype.quaff = function (glass) {
-		glass.consume(4);
-	};
-	/** @param {Glass} glass */
-	Customer.prototype.downInOne = function (glass) {
-		glass.consume(glass.quantity);
-	};
-
-	return Customer;
-}();
+/** @param {Glass} glass */
+Customer.prototype.drink = function (glass) {
+    glass.consume(1);
+};
+/** @param {Glass} glass */
+Customer.prototype.quaff = function (glass) {
+    glass.consume(4);
+};
+/** @param {Glass} glass */
+Customer.prototype.downInOne = function (glass) {
+    glass.consume(glass.quantity);
+};
 
 /**
  * Enumerator for the beer volume in OZ.
