@@ -6,16 +6,18 @@ JavaScript development workflow and tools
 Examples included:
   - Object Oriented js with prototypal inheritance and base constructors with parameters
   - Jasmine spec & test runner for unit testing
+  - JsHint for enforcing coding style with .jshintrc
+  - JsDoc for documenting
+    - (Closure Compiler type syntax)[https://developers.google.com/closure/compiler/docs/js-for-compiler#types]
+    - (Tags reference)[http://usejsdoc.org/index.html]
 
 Todo:
   - Travis-cs for automatically running tests on push
   - AMD / ES6 Module support via RequireJs
   - [EditorConfig](http://editorconfig.org) for cross-editor consistency
-  - JsHint(rc) for explicit style
   - [Bower](https://github.com/bower/bower) package manager
   - Karma test runner
   - Grunt task runner
-  - JsLint for js checking
   - CssLint for css checking
   - UglifyJs for minifying js + sourcemaps
   - Mocha + PhantomJs for headless browser testing
