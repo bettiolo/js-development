@@ -32,7 +32,7 @@ require.config({
 require(['spec-runner'], function(specRunner) {
     'use strict';
 
-    specRunner.executeSpecs([
+    specRunner([
         'beer-spec'
     ]);
 

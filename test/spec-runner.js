@@ -1,41 +1,41 @@
 /*global define:true, require:true */
 
-define(['jasmine-html'], function(jasmine) {
+define(['jasmine-html'], function (jasmine) {
     'use strict';
 
-    return {
-        executeSpecs : function executeSpecs(specs) {
-            var jasmineEnv = jasmine.getEnv(),
-                htmlReporter = new jasmine.HtmlReporter();
+    return function (specs) {
 
-            jasmineEnv.updateInterval = 1000;
-            jasmineEnv.addReporter(htmlReporter);
-            jasmineEnv.specFilter = function(spec) {
-                return htmlReporter.specFilter(spec);
-            };
+        var jasmineEnv = jasmine.getEnv(),
+            htmlReporter = new jasmine.HtmlReporter();
 
-            function executeSpec() {
-                require(specs, function(){
-                    jasmineEnv.execute();
-                });
-            }
+        jasmineEnv.updateInterval = 1000;
+        jasmineEnv.addReporter(htmlReporter);
+        jasmineEnv.specFilter = function (spec) {
+            return htmlReporter.specFilter(spec);
+        };
 
-            function executeSpecOnLoad() {
-                var currentWindowOnload = window.onload;
-                window.onload = function() {
-                    if (currentWindowOnload) {
-                        currentWindowOnload();
-                    }
-                    executeSpec();
-                };
-            }
-
-            if (document.readyState === 'complete') {
-                executeSpec();
-            } else {
-                executeSpecOnLoad();
-            }
+        function executeSpec() {
+            require(specs, function (){
+                jasmineEnv.execute();
+            });
         }
+
+        function executeSpecOnLoad() {
+            var currentWindowOnload = window.onload;
+            window.onload = function () {
+                if (currentWindowOnload) {
+                    currentWindowOnload();
+                }
+                executeSpec();
+            };
+        }
+
+        if (document.readyState === 'complete') {
+            executeSpec();
+        } else {
+            executeSpecOnLoad();
+        }
+
     };
 
 });
