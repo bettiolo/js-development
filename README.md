@@ -7,9 +7,9 @@ Examples included:
   - EcmaScript5 object oriented js with prototypal inheritance and base constructors with parameters
     - [MDN on object oriented js](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Introduction_to_Object-Oriented_JavaScript#Inheritance)
     - [ES5 and ES6 object oriented inheritance video](http://www.youtube.com/watch?v=NyClWddeO_A)
-  - Jasmine spec & test runner for unit testing
-  - JsHint for enforcing coding style with .jshintrc
-    - [Options](http://www.jshint.com/docs/options/)
+  - [Jasmine](http://pivotal.github.io/jasmine/) spec & test runner for unit testing
+  - [JsHint](http://www.jshint.com) for enforcing coding style with .jshintrc
+    - [Options reference](http://www.jshint.com/docs/options/)
   - [JsDoc3](http://usejsdoc.org) for documenting JavaScript and enriching editor intellisense
     - [Closure Compiler type syntax](https://developers.google.com/closure/compiler/docs/js-for-compiler#types)
     - [Tags reference](http://usejsdoc.org/index.html#JSDoc3_Tag_Dictionary)
