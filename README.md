@@ -4,7 +4,9 @@ js-development
 JavaScript development workflow and tools
 
 Examples included:
-  - Object Oriented js with prototypal inheritance and base constructors with parameters
+  - EcmaScript5 object oriented js with prototypal inheritance and base constructors with parameters
+    - [MDN on object oriented js](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Introduction_to_Object-Oriented_JavaScript#Inheritance)
+    - [ES5 and ES6 object oriented inheritance video](http://www.youtube.com/watch?v=NyClWddeO_A)
   - Jasmine spec & test runner for unit testing
   - JsHint for enforcing coding style with .jshintrc
     - [Options](http://www.jshint.com/docs/options/)
