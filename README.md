@@ -7,12 +7,16 @@ Examples included:
   - Object Oriented js with prototypal inheritance and base constructors with parameters
   - Jasmine spec & test runner for unit testing
   - JsHint for enforcing coding style with .jshintrc
+    - [Options](http://www.jshint.com/docs/options/)
   - JsDoc for documenting
     - [Closure Compiler type syntax](https://developers.google.com/closure/compiler/docs/js-for-compiler#types)
     - [Tags reference](http://usejsdoc.org/index.html)
   - [EditorConfig](http://editorconfig.org) for cross-editor consistency
     - [Properties reference](https://github.com/editorconfig/editorconfig/wiki/EditorConfig-Properties)
   - RequireJs dependencies management
+  - [JsTestDriver](https://code.google.com/p/js-test-driver/) support for running tests in multiple browsers
+    - [jsTestDriver.conf](https://code.google.com/p/js-test-driver/wiki/ConfigurationFile)
+    - [Jasmine JsTestDriver Adapter](https://github.com/ibolmo/jasmine-jstd-adapter)
 
 Todo:
   - Travis-cs for automatically running tests on push
