@@ -1,10 +1,16 @@
 var Glass = function () {
 
-	function Glass(maxVolume) {
+	/**
+	 * @constructor
+	 * @param {number} capacityInOz - The capacity of the glass in oz.
+	 * @abstract
+	 */ // Should be @inner?
+	function Glass(capacityInOz) {
 		this.quantity = 0;
-		this.capacity = maxVolume;
+		this.capacity = capacityInOz;
 	}
 
+	Glass.prototype.constructor = Glass;
 	Glass.prototype.consume = function (quantityInOz) {
 		this.quantity -= quantityInOz;
 	};
@@ -14,9 +20,13 @@ var Glass = function () {
 
 var Pint = function () {
 
+	/**
+	 * @constructor
+	 * @extends {Glass}
+	 */
 	function Pint() {
-		Glass.call(this, 20);
-		this.quantity = 20;
+		Glass.call(this, volumeInOz.PINT);
+		this.quantity = volumeInOz.PINT;
 	}
 
 	Pint.prototype = Object.create(Glass.prototype);
@@ -27,9 +37,14 @@ var Pint = function () {
 
 var HalfPint = function () {
 
+	/**
+	 * @constructor
+	 * @extends {Glass}
+	 */
 	function HalfPint() {
-		Glass.call(this, 10)
-		this.quantity = 10;
+		Glass.call(this, volumeInOz.HALF_PINT);
+		this.quantity = volumeInOz.HALF_PINT;
+		this.test = 'test';
 	}
 
 	HalfPint.prototype = Object.create(Glass.prototype);
@@ -38,11 +53,11 @@ var HalfPint = function () {
 	return HalfPint;
 }();
 
-var Jug = function(){
+var Jug = function () {
 
 	function Jug(){
-		Glass.call(this, 60);
-		this.quantity = 60;
+		Glass.call(this, volumeInOz.JUG);
+		this.quantity = volumeInOz.JUG;
 	}
 
 	Jug.prototype = Object.create(Glass.prototype);
@@ -53,19 +68,34 @@ var Jug = function(){
 
 var Customer = function () {
 
+   	/** @constructor */
 	function Customer() {
 
 	}
 
+	/** @param {Glass} glass */
 	Customer.prototype.drink = function (glass) {
 		glass.consume(1);
 	};
+	/** @param {Glass} glass */
 	Customer.prototype.quaff = function (glass) {
 		glass.consume(4);
 	};
+	/** @param {Glass} glass */
 	Customer.prototype.downInOne = function (glass) {
 		glass.consume(glass.quantity);
 	};
 
 	return Customer;
 }();
+
+/**
+ * Enumerator for the beer volume in OZ.
+ * @readonly
+ * @enum {number}
+ */
+var volumeInOz = {
+	PINT : 20,
+	HALF_PINT : 10,
+	JUG : 60
+}; // should use Object.freeze?
