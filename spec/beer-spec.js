@@ -97,5 +97,3 @@ describe('Customer', function() {
 		expect(jug.quantity).toEqual(0);
 	});
 });
-
-
