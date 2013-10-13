@@ -15,7 +15,9 @@ Examples included:
     - [Tags reference](http://usejsdoc.org/index.html#JSDoc3_Tag_Dictionary)
   - [EditorConfig](http://editorconfig.org) for cross-editor consistency
     - [Properties reference](https://github.com/editorconfig/editorconfig/wiki/EditorConfig-Properties)
-  - RequireJs with AMD dependencies
+  - [RequireJs](http://requirejs.org) with AMD dependencies
+    - [Why AMD](http://requirejs.org/docs/whyamd.html)
+    - [AMD Api](https://github.com/amdjs/amdjs-api/wiki/AMD)
   - [JsTestDriver](https://code.google.com/p/js-test-driver/) support for running unit tests in multiple browsers
     - [jsTestDriver.conf](https://code.google.com/p/js-test-driver/wiki/ConfigurationFile)
     - [Jasmine JsTestDriver Adapter](https://github.com/ibolmo/jasmine-jstd-adapter)
