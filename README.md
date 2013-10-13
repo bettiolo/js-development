@@ -24,7 +24,7 @@ Examples included:
     - [Jasmine JsTestDriver Adapter](https://github.com/ibolmo/jasmine-jstd-adapter)
 
 Todo:
-  - PhantomJs bor headless unit test running
+  - PhantomJs for headless unit test running
   - Travis-cs for automatically running tests on push
   - ES6 Module support
   - [Bower](https://github.com/bower/bower) package manager
