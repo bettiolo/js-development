@@ -34,9 +34,10 @@ Todo:
   - [Bower](https://github.com/bower/bower) package manager
   - Grunt task runner
   - UglifyJs for minifying js + sourcemaps
-  - Mocha + PhantomJs for headless browser testing (like Selenium)
+  - Mocha + PhantomJs for headless browser functional testing (like Selenium)
   - Keyboard Shortcuts
   - Add EcmaScript3 support for IE8
+  - Sauce Labs cross browser unit and functional testing
 
 Other:
   - [Local Tunnel](http://progrium.com/localtunnel) for sharing local web server (ex. testing on mobile device)
