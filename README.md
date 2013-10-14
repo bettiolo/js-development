@@ -46,3 +46,4 @@ Other:
   - CodeKit
   - component.io
   - waffle.io
+  - coveralls.io
