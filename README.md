@@ -38,8 +38,10 @@ Todo:
   - Keyboard Shortcuts
   - Add EcmaScript3 support for IE8
   - Sauce Labs cross browser unit and functional testing
-
+  - Gemnasium (npm) dependency checking
+  
 Other:
   - [Local Tunnel](http://progrium.com/localtunnel) for sharing local web server (ex. testing on mobile device)
   - LiveReload extension for Chrome
   - CodeKit
+  - component.io
