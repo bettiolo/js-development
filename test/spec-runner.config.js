@@ -1,4 +1,4 @@
-/*global require:true*/
+/*global require:true */
 
 require.config({
     baseUrl: '../',

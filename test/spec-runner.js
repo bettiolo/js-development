@@ -8,33 +8,15 @@ define(['jasmine-html'], function (jasmine) {
         var jasmineEnv = jasmine.getEnv(),
             htmlReporter = new jasmine.HtmlReporter();
 
-        jasmineEnv.updateInterval = 1000;
+        jasmineEnv.updateInterval = 250;
         jasmineEnv.addReporter(htmlReporter);
         jasmineEnv.specFilter = function (spec) {
             return htmlReporter.specFilter(spec);
         };
 
-        function executeSpec() {
-            require(specs, function (){
-                jasmineEnv.execute();
-            });
-        }
-
-        function executeSpecOnLoad() {
-            var currentWindowOnload = window.onload;
-            window.onload = function () {
-                if (currentWindowOnload) {
-                    currentWindowOnload();
-                }
-                executeSpec();
-            };
-        }
-
-        if (document.readyState === 'complete') {
-            executeSpec();
-        } else {
-            executeSpecOnLoad();
-        }
+        require(specs, function () {
+            jasmineEnv.execute();
+        });
 
     };
 
