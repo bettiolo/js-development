@@ -45,3 +45,4 @@ Other:
   - LiveReload extension for Chrome
   - CodeKit
   - component.io
+  - waffle.io
