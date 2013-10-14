@@ -36,7 +36,6 @@ Todo:
   - Grunt task runner
   - UglifyJs for minifying js + sourcemaps
   - Mocha + PhantomJs for headless browser functional testing (like Selenium)
-  - Keyboard Shortcuts
   - Add EcmaScript3 support for IE8
   - Sauce Labs cross browser unit and functional testing
   - Gemnasium (npm) dependency checking
