@@ -1,4 +1,4 @@
-js-development [![Build Status](https://travis-ci.org/bettiolo/js-development.png?branch=master)](http://travis-ci.org/bettiolo/js-development)
+js-development [![Build Status](https://travis-ci.org/bettiolo/js-development.png?branch=master)](https://travis-ci.org/bettiolo/js-development)
 ==============
 
 JavaScript development workflow and tools
