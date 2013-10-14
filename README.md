@@ -17,7 +17,7 @@ Examples included:
   - [EditorConfig](http://editorconfig.org) for cross-editor consistency
     - [Properties reference](https://github.com/editorconfig/editorconfig/wiki/EditorConfig-Properties)
   - [RequireJs](http://requirejs.org) with AMD dependencies
-    - [Why AMD](http://requirejs.org/docs/whyamd.html)
+    - [Why AMD](http://requirejs.org/docs/whyamd.html) Asynchronous vs synchronous dependency loading
     - [AMD Api](https://github.com/amdjs/amdjs-api/wiki/AMD)
   - [JsTestDriver](https://code.google.com/p/js-test-driver/) support for running unit tests in multiple browsers
     - [jsTestDriver.conf](https://code.google.com/p/js-test-driver/wiki/ConfigurationFile)
