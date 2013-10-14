@@ -1,5 +1,5 @@
-js-development
-============
+js-development [![Build Status](https://travis-ci.org/bettiolo/js-development.png?branch=master)](http://travis-ci.org/bettiolo/js-development)
+==============
 
 JavaScript development workflow and tools
 
@@ -22,16 +22,18 @@ Examples included:
   - [JsTestDriver](https://code.google.com/p/js-test-driver/) support for running unit tests in multiple browsers
     - [jsTestDriver.conf](https://code.google.com/p/js-test-driver/wiki/ConfigurationFile)
     - [Jasmine JsTestDriver Adapter](https://github.com/ibolmo/jasmine-jstd-adapter)
+  - [Karma Test Runner](http://karma-runner.github.io/) + [PhantomJs](http://phantomjs.org/) for headless unit test running
+    - [karma.conf.js reference](http://karma-runner.github.io/0.10/config/configuration-file.html)
+    - [karma-jasmine adapter shipped by default](https://github.com/karma-runner/karma-jasmine)
+  - [Travis-Ci](https://travis-ci.org) to automatically run tests on push to GitHub
+    - [.travis.yml & package.json configuration for Karma](http://karma-runner.github.io/0.10/plus/travis.html)
 
 Todo:
-  - PhantomJs for headless unit test running
-  - Travis-cs for automatically running tests on push
   - ES6 Module support
   - [Bower](https://github.com/bower/bower) package manager
-  - Karma test runner
   - Grunt task runner
   - UglifyJs for minifying js + sourcemaps
-  - Mocha + PhantomJs for headless browser testing
+  - Mocha + PhantomJs for headless browser testing (like Selenium)
   - Keyboard Shortcuts
   - Add EcmaScript3 support for IE8
 
