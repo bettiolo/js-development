@@ -6,30 +6,25 @@ require.config({
     paths: {
         'jasmine' : 'lib/jasmine-1.3.0/jasmine',
         'jasmine-html' : 'lib/jasmine-1.3.0/jasmine-html',
+        'domReady' : 'lib/domReady-2.0.1/domReady',
         'beer' : 'js/beer',
         'beer-spec' : 'js/beer.spec',
         'spec-runner' : 'test/spec-runner',
         'spec-runner-config' : 'test/spec-runner.config'
     },
     shim: {
-        'jasmine' : {
-            exports: 'jasmine'
-        },
         'jasmine-html' : {
             deps : ['jasmine'],
             exports : 'jasmine'
         },
         'beer-spec' : {
             deps : ['beer']
-        },
-        'spec-runner' : {
-            deps : ['jasmine-html'],
-            exports : 'specRunner'
         }
     }
 });
 
-require(['spec-runner'], function(specRunner) {
+require(['spec-runner'],
+function (specRunner) {
     'use strict';
 
     specRunner([
