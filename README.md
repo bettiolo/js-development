@@ -14,6 +14,7 @@ Examples included:
     - [.jshintrc options reference](http://www.jshint.com/docs/options/)
   - [JsDoc3](http://usejsdoc.org) for documenting JavaScript and enriching editor intellisense
     - [Tags reference](http://usejsdoc.org/index.html#JSDoc3_Tag_Dictionary)
+    - [Annotating JavaScript for the Closure Compiler](https://developers.google.com/closure/compiler/docs/js-for-compiler)
     - [Closure Compiler type syntax](https://developers.google.com/closure/compiler/docs/js-for-compiler#types)
   - [EditorConfig](http://editorconfig.org) for cross-editor consistency
     - [.editorconfig properties reference](https://github.com/editorconfig/editorconfig/wiki/EditorConfig-Properties)
