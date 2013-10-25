@@ -41,6 +41,7 @@ Todo:
   - Sauce Labs cross browser unit and functional testing
   - Gemnasium (npm) dependency checking
   - Create a [Volo](http://volojs.org/) package
+    - Use volo-ghdeploy to publish to GitHub Pages
   
 Other:
   - [Local Tunnel](http://progrium.com/localtunnel) for sharing local web server (ex. testing on mobile device)
