@@ -7,8 +7,7 @@ require.config({
         'jasmine' : '../lib/jasmine-1.3.0/jasmine',
         'jasmine-html' : '../lib/jasmine-1.3.0/jasmine-html',
         'domReady' : '../lib/domReady-2.0.1/domReady',
-        'spec-runner' : '../test/spec-runner',
-        'spec-runner-config' : 'test/spec-runner.config'
+        'spec-runner' : '../test/spec-runner'
     },
     shim: {
         'jasmine-html' : {
