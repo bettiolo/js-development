@@ -1,22 +1,18 @@
-/*global define, require */
+/*global require */
 
-define('spec-runner', ['domReady!', 'jasmine-html'],
-function (_, jasmine) {
-    'use strict';
+require(['../build/require.config'], function () {
+	'use strict';
 
-    var jasmineEnv = jasmine.getEnv(),
-        htmlReporter = new jasmine.HtmlReporter();
+	require(['domReady!', 'jasmine-html'], function (_, jasmine) {
+		var jasmineEnv = jasmine.getEnv(),
+			htmlReporter = new jasmine.HtmlReporter();
 
-    jasmineEnv.updateInterval = 250;
-    jasmineEnv.addReporter(htmlReporter);
-    jasmineEnv.specFilter = function (spec) {
-        return htmlReporter.specFilter(spec);
-    };
-
-    return function (specs) {
-        require(specs, function () {
-            jasmineEnv.execute();
-        });
-    };
+		jasmineEnv.updateInterval = 250;
+		jasmineEnv.addReporter(htmlReporter);
+		jasmineEnv.specFilter = function (spec) {
+			return htmlReporter.specFilter(spec);
+		};
+		jasmineEnv.execute();
+	});
 
 });

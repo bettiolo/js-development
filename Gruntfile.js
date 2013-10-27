@@ -9,7 +9,7 @@ module.exports = function (grunt) {
 			compile : {
 				options : {
 					appDir : 'js',
-					mainConfigFile : 'test/spec-runner.config.js',
+					mainConfigFile : 'build/require.config.js',
 					optimize: 'none',
 					// useStrict: true,
 					// baseUrl: 'test',
