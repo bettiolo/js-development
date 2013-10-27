@@ -1,19 +1,21 @@
 {
-  "name" : "js-development",
-  "author" : "Marco Bettiolo <marco@bettiolo.it>",
-  "repository": {
-    "type" : "git",
-    "url" : "https://github.com/bettiolo/js-development"
-  },
-  "version" : "0.0.1",
-  "devDependencies" : {
-    "karma" : "~0.10"
-  },
-  "engines" : {
-    "node" : "~0.10"
-  },
-  "scripts" : {
-    "test" : "karma start --single-run --browsers PhantomJS"
-  },
-  "license": ""
+	"name" : "js-development",
+	"author" : "Marco Bettiolo <marco@bettiolo.it>",
+	"repository" : {
+		"type" : "git",
+		"url" : "https://github.com/bettiolo/js-development"
+	},
+	"version" : "0.0.1",
+	"devDependencies" : {
+		"karma" : "~0.10",
+		"grunt" : "~0.4.1",
+		"grunt-contrib-requirejs" : "~0.4.1"
+	},
+	"engines" : {
+		"node" : "~0.10"
+	},
+	"scripts" : {
+		"test" : "karma start --single-run --browsers PhantomJS"
+	},
+	"license" : ""
 }
