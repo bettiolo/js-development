@@ -1,21 +1,31 @@
 {
-	"name" : "js-development",
-	"author" : "Marco Bettiolo <marco@bettiolo.it>",
-	"repository" : {
-		"type" : "git",
-		"url" : "https://github.com/bettiolo/js-development"
-	},
-	"version" : "0.0.1",
-	"devDependencies" : {
-		"karma" : "~0.10",
-		"grunt" : "~0.4.1",
-		"grunt-contrib-requirejs" : "~0.4.1"
-	},
-	"engines" : {
-		"node" : "~0.10"
-	},
-	"scripts" : {
-		"test" : "karma start --single-run --browsers PhantomJS"
-	},
-	"license" : ""
+  "name": "js-development",
+  "author": "Marco Bettiolo <marco@bettiolo.it>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bettiolo/js-development"
+  },
+  "version": "0.0.1",
+  "devDependencies": {
+    "karma": "~0.10",
+    "grunt": "~0.4.1",
+    "grunt-contrib-requirejs": "~0.4.1"
+  },
+  "engines": {
+    "node": "~0.10"
+  },
+  "scripts": {
+    "test": "karma start --single-run --browsers PhantomJS"
+  },
+  "license": "",
+  "volo": {
+    "baseDir": "lib",
+    "dependencies": {
+      "almond": "github:jrburke/almond/0.2.6",
+      "require": "github:jrburke/requirejs/2.1.9",
+      "domReady": "github:requirejs/domReady/2.0.1",
+      "jasmine": "http://github.com/pivotal/jasmine/raw/master/dist/jasmine-standalone-1.3.1.zip",
+      "jasmineAdapter": "github:ibolmo/jasmine-jstd-adapter/1.1.2#src/JasmineAdapter.js"
+    }
+  }
 }
