@@ -123,7 +123,7 @@ define('pub/customer',[], function () {
 /**
  * The main module that defines the public interface for pub, a made-up library.
  */
-define('pub',['require','pub/glass','pub/pint','pub/halfPint','pub/jug','pub/customer'],function (require) {
+define('dist/pub',['require','pub/glass','pub/pint','pub/halfPint','pub/jug','pub/customer'],function (require) {
     
 
     var Glass = require('pub/glass'),

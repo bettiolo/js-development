@@ -8,11 +8,23 @@ module.exports = function (grunt) {
 		requirejs : {
 			compile : {
 				options : {
-					name : 'pub',
+					appDir : 'js',
 					mainConfigFile : 'test/spec-runner.config.js',
 					optimize: 'none',
 					// useStrict: true,
-					out : 'dist/pub.js'
+					// baseUrl: 'test',
+					dir : 'dist',
+					modules : [
+						{
+							name : 'dist/pub'
+						},
+						{
+							name : 'dist/pub.spec',
+							exclude : [ 'dist/pub' ]
+
+						}
+					],
+					removeCombined: true
 				}
 			}
 		}
