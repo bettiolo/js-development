@@ -23,11 +23,7 @@ function (specRunner) {
     'use strict';
 
     specRunner([
-        'pub/glass.spec',
-        'pub/pint.spec',
-        'pub/halfPint.spec',
-        'pub/jug.spec',
-        'pub/customer.spec'
+        'js/pub.spec'
     ]);
 
 });

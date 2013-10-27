@@ -1,4 +1,4 @@
-/*global define:true, require:true */
+/*global define, require */
 
 define('spec-runner', ['domReady!', 'jasmine-html'],
 function (_, jasmine) {
