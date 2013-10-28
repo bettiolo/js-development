@@ -1,12 +1,14 @@
-/*global module */
+/*global module, require */
 
 module.exports = function (grunt) {
 	'use strict';
 
+	require( './build.config.js' );
+
 	grunt.initConfig({
 		pkg : grunt.file.readJSON('package.json'),
 		clean : {
-			dist : [ 'dist' ]
+			dist : [ '<%= distDir %>' ]
 		},
 		requirejs : {
 			app : {
@@ -54,15 +56,18 @@ module.exports = function (grunt) {
 		watch : {
 			js : {
 				files : [ 'js/**/*.js' ],
-				tasks : [ 'test', 'build', 'karma:specs:run' ],
+				tasks : [ 'build', 'test' ],
 				options : {
 					livereload : true
 				}
 			}
 		},
 		karma : {
-			specs : {
+			options : {
 				configFile : 'karma.conf.js'
+			},
+			specs : {
+
 			}
 		}
 	});
@@ -76,5 +81,8 @@ module.exports = function (grunt) {
 	grunt.loadNpmTasks('grunt-karma');
 
 	grunt.registerTask('build', [ 'clean', 'requirejs', 'concat', 'uglify' ]);
-	grunt.registerTask('test', [ 'jshint' ]);
+	grunt.registerTask('test', [ 'jshint', 'karma:specs:run' ]);
+
+	grunt.registerTask('default', [ 'build', 'test' ]);
+
 };
