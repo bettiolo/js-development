@@ -1,26 +1,25 @@
-/*global module, require */
+/*global module */
 
 module.exports = function (grunt) {
 	'use strict';
 
-	require( './build.config.js' );
-
 	grunt.initConfig({
 		pkg : grunt.file.readJSON('package.json'),
+		cfg : grunt.file.readJSON('build/build-config.json'),
 		clean : {
-			dist : [ '<%= distDir %>' ]
+			dist : [ '<%= cfg.dist.dir %>' ]
 		},
 		requirejs : {
 			app : {
 				options : {
 					name : 'pub',
-					mainConfigFile : 'build/require.config.js',
+					mainConfigFile : '<%= cfg.buildDir %>/require.config.js',
 					optimize : 'none',
-					include : [ 'lib/almond.js' ],
-					out : 'dist/pub.js',
+					include : [ '<%= cfg.libDir %>/almond.js' ],
+					out : '<%= cfg.dist.dir %>/pub.js',
 					wrap : {
-						startFile : 'build/wrap.start',
-						endFile : 'build/wrap.end'
+						startFile : '<%= cfg.buildDir %>/wrap.start',
+						endFile : '<%= cfg.buildDir %>/wrap.end'
 					}
 				}
 			}
@@ -30,8 +29,8 @@ module.exports = function (grunt) {
 				separator: '\n'
 			},
 			specs : {
-				src : ['js/pub/*.spec.js'],
-				dest : 'dist/pub.spec.js',
+				src : [ '<%= cfg.app.specs %>' ],
+				dest : '<%= cfg.dist.specs %>',
 				nonull : true
 			}
 		},
@@ -39,23 +38,21 @@ module.exports = function (grunt) {
 			options : {
 				jshintrc : '.jshintrc'
 			},
-			development : [
-				'js/**/*.js'
-			]
+			development : [ '<%= cfg.app.all %>' ]
 		},
 		uglify : {
 			dist : {
 				files : {
-					'dist/pub.min.js': [ 'dist/pub.js' ]
+					'<%= cfg.dist.min %>': [ '<%= cfg.dist.dir %>/pub.js' ]
 				},
 				options : {
-					// sourceMap : 'dist/pub.min.map.js';
+					// sourceMap : '<%= cfg.dist.dir %>/pub.min.map.js';
 				}
 			}
 		},
 		watch : {
 			js : {
-				files : [ 'js/**/*.js' ],
+				files : [ '<%= cfg.app.all %>' ],
 				tasks : [ 'build', 'test' ],
 				options : {
 					livereload : true
@@ -64,7 +61,23 @@ module.exports = function (grunt) {
 		},
 		karma : {
 			options : {
-				configFile : 'karma.conf.js'
+				basePath : '',
+				frameworks : [ 'jasmine' ],
+				files : [
+					'<%= cfg.app.min %>',
+					'js/**/*.spec.js'
+				],
+				exclude : [
+
+				],
+				reporters : [ 'dots' ],
+				port : 9876,
+				colors : true,
+				logLevel : 'WARN',
+				autoWatch : false,
+				browsers : [ 'PhantomJS' ],
+				captureTimeout : 60000,
+				singleRun : false
 			},
 			specs : {
 

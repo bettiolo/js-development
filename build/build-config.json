@@ -1,0 +1,18 @@
+{
+	"buildDir" : "build",
+	"dist" : {
+		"dir" : "dist",
+		"min" : "dist/pub.min.js",
+		"specs" : "dist/pub.specs.js"
+	},
+	"libDir" : "lib",
+	"appDir" : "js",
+	"app" : {
+		"js" : [
+			"js/**/*.js",
+			"!js/**/*.spec.js"
+		],
+		"specs" : "js/**/*.spec.js" ,
+		"all" : "js/**/*.js"
+	}
+}
