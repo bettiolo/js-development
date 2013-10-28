@@ -56,6 +56,7 @@ Todo:
   - [Jasmine grunt task](grunt-contrib-jasmine) to run jasmine specs via grunt instead of karma
   - [JsDoc grunt taks](https://github.com/krampstudio/grunt-jsdoc-plugin) generates documentation
   - [FileRev grunt taks](https://github.com/yeoman/grunt-filerev) generates file revision hashes to improve caching
+  - Templates grunt task replaces placeholders and generate output files
   
 Other:
   - [Local Tunnel](http://progrium.com/localtunnel) for sharing local web server (ex. testing on mobile device)
