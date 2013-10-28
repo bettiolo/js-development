@@ -39,6 +39,7 @@ Examples included:
     - [Clean task](https://github.com/gruntjs/grunt-contrib-clean) cleans the output directory
     - [JSHint task](https://github.com/gruntjs/grunt-contrib-jshint) validates application and tests
     - [UglifyJs task](https://github.com/gruntjs/grunt-contrib-uglify) minifies and generates source maps
+  - [Gemnasium](https://gemnasium.com) automatically checks package.json for outdated packages
 
 Todo:
   - ES6 Module support
@@ -46,7 +47,6 @@ Todo:
   - Mocha + PhantomJs for headless browser functional testing (like Selenium)
   - Add EcmaScript3 support for IE8
   - Sauce Labs cross browser unit and functional testing
-  - Gemnasium (npm) dependency checking
   - Create a [Volo](http://volojs.org/) package
     - Use volo-ghdeploy to publish to GitHub Pages
   - [Version Badge](http://badge.fury.io/) to provide package version and link
