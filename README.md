@@ -54,6 +54,7 @@ Todo:
     - Use volo-ghdeploy to publish to GitHub Pages
   - [Version Badge](http://badge.fury.io/) to provide package version and link
   - [Jasmine grunt task](grunt-contrib-jasmine) to run jasmine specs via grunt instead of karma
+  - [JsDoc grunt taks](https://github.com/krampstudio/grunt-jsdoc-plugin) generates documentation
   
 Other:
   - [Local Tunnel](http://progrium.com/localtunnel) for sharing local web server (ex. testing on mobile device)
