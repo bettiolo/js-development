@@ -35,7 +35,9 @@ Todo:
   - ES6 Module support
   - [Bower](https://github.com/bower/bower) package manager
   - Grunt task runner
-    - [requirejs r.js task](https://github.com/jrburke/r.js/blob/master/build/example.build.js) to optimize the and create a single file library
+    - [requirejs r.js task](https://github.com/jrburke/r.js) to optimize the and create a single file library
+    - [concat task](https://github.com/gruntjs/grunt-contrib-concat) to concatenate test files
+    - [clean task](https://github.com/gruntjs/grunt-contrib-clean) to clean the output directory
   - UglifyJs for minifying js + sourcemaps
   - Mocha + PhantomJs for headless browser functional testing (like Selenium)
   - Add EcmaScript3 support for IE8
