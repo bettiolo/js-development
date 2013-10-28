@@ -34,10 +34,10 @@ module.exports = function (grunt) {
 			}
 		},
 		jshint : {
-			options: {
-				jshintrc: '.jshintrc'
+			options : {
+				jshintrc : '.jshintrc'
 			},
-			development: [
+			development : [
 				'js/**/*.js'
 			]
 		},
@@ -54,11 +54,15 @@ module.exports = function (grunt) {
 		watch : {
 			js : {
 				files : [ 'js/**/*.js' ],
-				tasks : [ 'test', 'build' ],
+				tasks : [ 'test', 'build', 'karma:specs:run' ],
 				options : {
-					// interval : 5000,
 					livereload : true
 				}
+			}
+		},
+		karma : {
+			specs : {
+				configFile : 'karma.conf.js'
 			}
 		}
 	});
@@ -69,6 +73,7 @@ module.exports = function (grunt) {
 	grunt.loadNpmTasks('grunt-contrib-jshint');
 	grunt.loadNpmTasks('grunt-contrib-uglify');
 	grunt.loadNpmTasks('grunt-contrib-watch');
+	grunt.loadNpmTasks('grunt-karma');
 
 	grunt.registerTask('build', [ 'clean', 'requirejs', 'concat', 'uglify' ]);
 	grunt.registerTask('test', [ 'jshint' ]);
