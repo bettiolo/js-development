@@ -12,14 +12,14 @@ module.exports = function (grunt) {
 		requirejs : {
 			app : {
 				options : {
-					name : 'pub',
-					mainConfigFile : '<%= cfg.buildDir %>/require.config.js',
+					name : '<%= cfg.app.namespace %>',
+					mainConfigFile : '<%= cfg.build.dir %>/require.config.js',
 					optimize : 'none',
-					include : [ '<%= cfg.libDir %>/almond.js' ],
+					include : [ '<%= cfg.lib.dir %>/almond.js' ],
 					out : '<%= cfg.dist.dir %>/pub.js',
 					wrap : {
-						startFile : '<%= cfg.buildDir %>/wrap.start',
-						endFile : '<%= cfg.buildDir %>/wrap.end'
+						startFile : '<%= cfg.build.dir %>/wrap.start',
+						endFile : '<%= cfg.build.dir %>/wrap.end'
 					}
 				}
 			}
@@ -29,8 +29,8 @@ module.exports = function (grunt) {
 				separator: '\n'
 			},
 			specs : {
-				src : [ '<%= cfg.app.specs %>' ],
-				dest : '<%= cfg.dist.specs %>',
+				src : [ '<%= cfg.app.spec %>' ],
+				dest : '<%= cfg.dist.spec %>',
 				nonull : true
 			}
 		},
@@ -43,7 +43,7 @@ module.exports = function (grunt) {
 		uglify : {
 			dist : {
 				files : {
-					'<%= cfg.dist.min %>': [ '<%= cfg.dist.dir %>/pub.js' ]
+					'<%= cfg.dist.min %>': [ '<%= cfg.dist.bundle %>' ]
 				},
 				options : {
 					// sourceMap : '<%= cfg.dist.dir %>/pub.min.map.js';
@@ -63,13 +63,7 @@ module.exports = function (grunt) {
 			options : {
 				basePath : '',
 				frameworks : [ 'jasmine' ],
-				files : [
-					'<%= cfg.app.min %>',
-					'js/**/*.spec.js'
-				],
-				exclude : [
-
-				],
+				exclude : [ ],
 				reporters : [ 'dots' ],
 				port : 9876,
 				colors : true,
@@ -77,11 +71,13 @@ module.exports = function (grunt) {
 				autoWatch : false,
 				browsers : [ 'PhantomJS' ],
 				captureTimeout : 60000,
-				singleRun : false
+				singleRun : false,
+				files : [
+					'<%= cfg.dist.min %>',
+					'<%= cfg.dist.spec %>'
+				]
 			},
-			specs : {
-
-			}
+			spec : { }
 		}
 	});
 
@@ -94,7 +90,7 @@ module.exports = function (grunt) {
 	grunt.loadNpmTasks('grunt-karma');
 
 	grunt.registerTask('build', [ 'clean', 'requirejs', 'concat', 'uglify' ]);
-	grunt.registerTask('test', [ 'jshint', 'karma:specs:run' ]);
+	grunt.registerTask('test', [ 'jshint', 'karma:spec:run' ]);
 
 	grunt.registerTask('default', [ 'build', 'test' ]);
 

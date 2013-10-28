@@ -1,3 +1,9 @@
+/*global describe */
+
+describe('Pub', function() {
+	'use strict';
+
+});
 /*global pub, describe, it, beforeEach, expect */
 
 describe('Customer', function() {

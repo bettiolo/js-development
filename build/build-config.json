@@ -1,18 +1,24 @@
 {
-	"buildDir" : "build",
-	"dist" : {
-		"dir" : "dist",
-		"min" : "dist/pub.min.js",
-		"specs" : "dist/pub.specs.js"
-	},
-	"libDir" : "lib",
-	"appDir" : "js",
 	"app" : {
+		"namespace" : "pub",
+		"dir" : "js",
 		"js" : [
 			"js/**/*.js",
 			"!js/**/*.spec.js"
 		],
-		"specs" : "js/**/*.spec.js" ,
+		"spec" : "js/**/*.spec.js",
 		"all" : "js/**/*.js"
+	},
+	"build" : {
+		"dir" : "build"
+	},
+	"dist" : {
+		"dir" : "dist",
+		"bundle" : "dist/pub.js",
+		"min" : "dist/pub.min.js",
+		"spec" : "dist/pub.spec.js"
+	},
+	"lib" : {
+		"dir" : "lib"
 	}
 }
