@@ -5,6 +5,9 @@ module.exports = function (grunt) {
 
 	grunt.initConfig({
 		pkg : grunt.file.readJSON('package.json'),
+		clean : {
+			dist : [ 'dist' ]
+		},
 		requirejs : {
 			app : {
 				options : {
@@ -32,8 +35,9 @@ module.exports = function (grunt) {
 		}
 	});
 
+	grunt.loadNpmTasks('grunt-contrib-clean');
 	grunt.loadNpmTasks('grunt-contrib-requirejs');
 	grunt.loadNpmTasks('grunt-contrib-concat');
 
-	grunt.registerTask('default', [ 'requirejs', 'concat' ]);
+	grunt.registerTask('default', [ 'clean', 'requirejs', 'concat' ]);
 };
