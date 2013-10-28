@@ -53,7 +53,7 @@ module.exports = function (grunt) {
 		watch : {
 			js : {
 				files : [ '<%= cfg.app.all %>' ],
-				tasks : [ 'build', 'test' ],
+				tasks : [ 'build', 'watch-test' ],
 				options : {
 					livereload : true
 				}
@@ -71,13 +71,17 @@ module.exports = function (grunt) {
 				autoWatch : false,
 				browsers : [ 'PhantomJS' ],
 				captureTimeout : 60000,
-				singleRun : false,
 				files : [
 					'<%= cfg.dist.min %>',
 					'<%= cfg.dist.spec %>'
 				]
 			},
-			spec : { }
+			spec : {
+				singleRun : true
+			},
+			specWatch : {
+				singleRun : false
+			}
 		}
 	});
 
@@ -90,7 +94,8 @@ module.exports = function (grunt) {
 	grunt.loadNpmTasks('grunt-karma');
 
 	grunt.registerTask('build', [ 'clean', 'requirejs', 'concat', 'uglify' ]);
-	grunt.registerTask('test', [ 'jshint', 'karma:spec:run' ]);
+	grunt.registerTask('test', [ 'jshint', 'karma:spec:start' ]);
+	grunt.registerTask('watch-test', [ 'jshint', 'karma:specWatch:run' ]);
 
 	grunt.registerTask('default', [ 'build', 'test' ]);
 

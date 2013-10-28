@@ -29,7 +29,7 @@
     "node": "~0.10"
   },
   "scripts": {
-    "test": "karma start --single-run --browsers PhantomJS"
+    "test": "grunt"
   },
   "license": "",
   "volo": {
