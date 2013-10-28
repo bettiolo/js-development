@@ -1,4 +1,4 @@
-/*global pub, describe, it, beforeEach, expect */
+/*global describe */
 
 describe('Pub', function() {
 	'use strict';

@@ -32,12 +32,22 @@ module.exports = function (grunt) {
 				dest : 'dist/pub.spec.js',
 				nonull : true
 			}
+		},
+		jshint : {
+			options: {
+				jshintrc: '.jshintrc'
+			},
+			development: [
+				'js/**/*.js'
+			]
 		}
 	});
 
 	grunt.loadNpmTasks('grunt-contrib-clean');
 	grunt.loadNpmTasks('grunt-contrib-requirejs');
 	grunt.loadNpmTasks('grunt-contrib-concat');
+	grunt.loadNpmTasks('grunt-contrib-jshint');
 
 	grunt.registerTask('default', [ 'clean', 'requirejs', 'concat' ]);
+	grunt.registerTask('test', [ 'jshint' ]);
 };
