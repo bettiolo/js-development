@@ -6,27 +6,35 @@ module.exports = function (grunt) {
 	grunt.initConfig({
 		pkg : grunt.file.readJSON('package.json'),
 		requirejs : {
-			compile : {
+			app : {
 				options : {
-					appDir : 'js',
+					name : 'app',
 					mainConfigFile : 'build/require.config.js',
-					optimize: 'none',
-					// useStrict: true,
-					// baseUrl: 'test',
-					dir : 'dist',
-					modules : [
-						{
-							name : 'dist/pub'
-						},
-						{
-							name : 'dist/pub.spec',
-							exclude : [ 'dist/pub' ]
+					optimize : 'none',
+					include : [ 'lib/almond.js' ],
+					out : 'dist/pub.js',
+					wrap : {
+						startFile : 'build/wrap.start',
+						endFile : 'build/wrap.end'
+					}
+				}
+			},
 
-						}
-					],
-					removeCombined: true
+			specs : {
+				options : {
+					name : 'pub.spec',
+					mainConfigFile : 'build/require.config.js',
+					optimize : 'none',
+					include : [ 'lib/almond.js' ],
+					exclude : [ ],
+					out : 'dist/pub.spec.js',
+					wrap : {
+						startFile : 'build/wrap.start',
+						endFile : 'build/wrap.spec.end'
+					}
 				}
 			}
+
 		}
 	});
 
