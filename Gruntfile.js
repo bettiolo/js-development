@@ -45,6 +45,9 @@ module.exports = function (grunt) {
 			dist : {
 				files : {
 					'dist/pub.min.js': ['dist/pub.js']
+				},
+				options : {
+					sourceMap : 'dist/pub.min.map.js'
 				}
 			}
 		}
