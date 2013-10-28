@@ -35,7 +35,7 @@ Examples included:
     - [.travis.yml configuration reference](http://about.travis-ci.org/docs/user/build-configuration/)
     - [.travis.yml & package.json configuration for Karma](http://karma-runner.github.io/0.10/plus/travis.html)
   - [Grunt task runner](http://gruntjs.com/) to automate repetitive tasks
-    - [RequireJs r.js task](https://github.com/jrburke/r.js) bundles application
+    - [RequireJs r.js task](https://github.com/jrburke/r.js) bundles application and inlines [Almond.js](https://github.com/jrburke/almond)
     - [Concat task](https://github.com/gruntjs/grunt-contrib-concat) concatenates jasmine specs
     - [Clean task](https://github.com/gruntjs/grunt-contrib-clean) cleans the output directory
     - [JSHint task](https://github.com/gruntjs/grunt-contrib-jshint) validates application and tests
