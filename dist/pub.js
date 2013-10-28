@@ -539,7 +539,7 @@ define('pub/customer',[], function () {
 
     return Customer;
 });
-/*global define, pub */
+/*global define */
 
 /**
  * The main module that defines the public interface for pub, a made-up library.

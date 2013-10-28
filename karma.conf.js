@@ -7,7 +7,7 @@ module.exports = function (config) {
 		basePath : '',
 		frameworks : ['jasmine'],
 		files : [
-			'dist/pub.js',
+			'dist/pub.min.js',
 			'js/**/*.spec.js'
 		],
 		exclude : [
