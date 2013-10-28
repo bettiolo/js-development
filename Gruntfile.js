@@ -44,10 +44,11 @@ module.exports = function (grunt) {
 		uglify : {
 			dist : {
 				files : {
-					'dist/pub.min.js': ['dist/pub.js']
+					'dist/pub.min.js': [ 'dist/pub.js' ]
 				},
 				options : {
-					sourceMap : 'dist/pub.min.map.js'
+					// sourceMap : 'dist/pub.min.map.js';
+					// }
 				}
 			}
 		}
