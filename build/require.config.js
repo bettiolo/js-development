@@ -5,7 +5,6 @@ require.config({
 	// urlArgs : 'cb=' + Math.random(),
 	paths : {
 		'pub' : 'js/pub',
-		'app' : 'js/app',
 		'pub.spec' : 'js/pub.spec',
 		'jasmine' : 'lib/jasmine/jasmine',
 		'jasmine-html' : 'lib/jasmine/jasmine-html',
@@ -14,8 +13,16 @@ require.config({
 	},
 	shim : {
 		'jasmine-html' : {
-			deps : [ 'jasmine', 'js/pub.spec' ],
+			deps : [ 'jasmine' ],
 			exports : 'jasmine'
-		}
+		},
+		'pub.spec' : [
+			'pub',
+			'pub/glass.spec',
+			'pub/pint.spec',
+			'pub/halfPint.spec',
+			'pub/jug.spec',
+			'pub/customer.spec'
+		]
 	}
 });

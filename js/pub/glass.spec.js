@@ -1,18 +1,15 @@
-/*global define, describe, it, beforeEach, expect */
+/*global pub, describe, it, beforeEach, expect */
+describe('Glass', function() {
+	'use strict';
 
-define(['pub/glass'], function (Glass) {
-    'use strict';
+    var glass;
 
-    describe('Glass', function() {
-        var glass;
+    beforeEach(function() {
+        glass = new pub.Glass();
+    });
 
-        beforeEach(function() {
-            glass = new Glass();
-        });
-
-        it('Is empty', function() {
-            expect(glass.quantity).toEqual(0);
-        });
+    it('Is empty', function() {
+        expect(glass.quantity).toEqual(0);
     });
 
 });

@@ -8,7 +8,7 @@ module.exports = function (grunt) {
 		requirejs : {
 			app : {
 				options : {
-					name : 'app',
+					name : 'pub',
 					mainConfigFile : 'build/require.config.js',
 					optimize : 'none',
 					include : [ 'lib/almond.js' ],
@@ -18,25 +18,22 @@ module.exports = function (grunt) {
 						endFile : 'build/wrap.end'
 					}
 				}
-			},
-
-			specs : {
-				options : {
-					name : 'pub.spec',
-					mainConfigFile : 'build/require.config.js',
-					optimize : 'none',
-					include : [ 'lib/almond.js' ],
-					exclude : [ ],
-					out : 'dist/pub.spec.js',
-					wrap : {
-						startFile : 'build/wrap.start',
-						endFile : 'build/wrap.spec.end'
-					}
-				}
 			}
-
+		},
+		concat: {
+			options : {
+				separator: '\n'
+			},
+			specs : {
+				src : ['js/pub/*.spec.js'],
+				dest : 'dist/pub.spec.js',
+				nonull : true
+			}
 		}
 	});
 
 	grunt.loadNpmTasks('grunt-contrib-requirejs');
+	grunt.loadNpmTasks('grunt-contrib-concat');
+
+	grunt.registerTask('default', [ 'requirejs', 'concat' ]);
 };

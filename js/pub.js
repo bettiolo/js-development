@@ -1,4 +1,4 @@
-/*global define */
+/*global define, pub */
 
 /**
  * The main module that defines the public interface for pub, a made-up library.
@@ -12,11 +12,13 @@ define(function (require) {
         Jug = require('pub/jug'),
         Customer = require('pub/customer');
 
-    return {
+    window.pub = {
         Glass : Glass,
         Pint : Pint,
         HalfPint : HalfPint,
         Jug : Jug,
         Customer : Customer
     };
+
+	return window.pub;
 });

@@ -539,12 +539,12 @@ define('pub/customer',[], function () {
 
     return Customer;
 });
-/*global define */
+/*global define, pub */
 
 /**
  * The main module that defines the public interface for pub, a made-up library.
  */
-define('app',['require','pub/glass','pub/pint','pub/halfPint','pub/jug','pub/customer'],function (require) {
+define('pub',['require','pub/glass','pub/pint','pub/halfPint','pub/jug','pub/customer'],function (require) {
     
 
     var Glass = require('pub/glass'),
@@ -553,13 +553,15 @@ define('app',['require','pub/glass','pub/pint','pub/halfPint','pub/jug','pub/cus
         Jug = require('pub/jug'),
         Customer = require('pub/customer');
 
-    return {
+    window.pub = {
         Glass : Glass,
         Pint : Pint,
         HalfPint : HalfPint,
         Jug : Jug,
         Customer : Customer
     };
+
+	return window.pub;
 });
 
     return require('pub');

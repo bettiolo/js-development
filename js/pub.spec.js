@@ -1,11 +1,6 @@
-/*global define */
-define([
-	'pub/glass.spec',
-	'pub/pint.spec',
-	'pub/halfPint.spec',
-	'pub/jug.spec',
-	'pub/customer.spec'
-], function() {
+/*global pub, describe, it, beforeEach, expect */
+
+describe('Pub', function() {
 	'use strict';
 
 });
