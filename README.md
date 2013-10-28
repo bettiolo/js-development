@@ -31,9 +31,10 @@ Examples included:
     - [.travis.yml configuration reference](http://about.travis-ci.org/docs/user/build-configuration/)
     - [.travis.yml & package.json configuration for Karma](http://karma-runner.github.io/0.10/plus/travis.html)
   - [Grunt task runner](http://gruntjs.com/) to automate repetitive tasks
-    - [requirejs r.js task](https://github.com/jrburke/r.js) to optimize the and create a single file library
-    - [concat task](https://github.com/gruntjs/grunt-contrib-concat) to concatenate test files
-    - [clean task](https://github.com/gruntjs/grunt-contrib-clean) to clean the output directory
+    - [requirejs r.js task](https://github.com/jrburke/r.js) bundles application
+    - [concat task](https://github.com/gruntjs/grunt-contrib-concat) concatenates jasmine specs
+    - [clean task](https://github.com/gruntjs/grunt-contrib-clean) cleans the output directory
+    - [jshint task](https://github.com/gruntjs/grunt-contrib-jshint) validates application and tests
 
 Todo:
   - ES6 Module support
