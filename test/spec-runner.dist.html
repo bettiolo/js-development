@@ -7,25 +7,22 @@
 	<script src="../lib/jasmine/jasmine.js"></script>
 	<script src="../lib/jasmine/jasmine-html.js"></script>
 
-	<!-- include source files here... -->
 	<script src="../dist/pub.min.js"></script>
-
-	<!-- include spec files here... -->
 	<script src="../dist/pub.spec.js"></script>
 
 	<script type="text/javascript">
-		(function() {
+		(function () {
 			var jasmineEnv = jasmine.getEnv(),
-				  htmlReporter = new jasmine.HtmlReporter();
+					htmlReporter = new jasmine.HtmlReporter();
 
 			jasmineEnv.updateInterval = 250;
 			jasmineEnv.addReporter(htmlReporter);
-			jasmineEnv.specFilter = function(spec) {
+			jasmineEnv.specFilter = function (spec) {
 				return htmlReporter.specFilter(spec);
 			};
 
 			var currentWindowOnload = window.onload;
-			window.onload = function() {
+			window.onload = function () {
 				if (currentWindowOnload) {
 					currentWindowOnload();
 				}
