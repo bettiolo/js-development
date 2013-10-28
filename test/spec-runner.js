@@ -5,7 +5,7 @@ require(['../build/require.config'], function () {
 
 	require(['domReady!', 'jasmine-html'], function (_, jasmine) {
 
-		require(['pub.spec'], function() {
+		require(['pub.spec'], function () {
 			var jasmineEnv = jasmine.getEnv(),
 				htmlReporter = new jasmine.HtmlReporter();
 

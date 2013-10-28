@@ -1,39 +1,39 @@
 <!doctype html>
 <html>
-<head>
-	<title>Jasmine Spec Runner</title>
+	<head>
+		<title>Jasmine Spec Runner</title>
 
-	<link rel="stylesheet" type="text/css" href="../lib/jasmine/jasmine.css">
-	<script src="../lib/jasmine/jasmine.js"></script>
-	<script src="../lib/jasmine/jasmine-html.js"></script>
+		<link rel="stylesheet" type="text/css" href="../lib/jasmine/jasmine.css">
+		<script src="../lib/jasmine/jasmine.js"></script>
+		<script src="../lib/jasmine/jasmine-html.js"></script>
 
-	<script src="../dist/pub.min.js"></script>
-	<script src="../dist/pub.spec.js"></script>
+		<script src="../dist/pub.min.js"></script>
+		<script src="../dist/pub.spec.js"></script>
 
-	<script type="text/javascript">
-		(function () {
-			var jasmineEnv = jasmine.getEnv(),
-					htmlReporter = new jasmine.HtmlReporter();
+		<script type="text/javascript">
+			(function () {
+				var jasmineEnv = jasmine.getEnv(),
+						htmlReporter = new jasmine.HtmlReporter();
 
-			jasmineEnv.updateInterval = 250;
-			jasmineEnv.addReporter(htmlReporter);
-			jasmineEnv.specFilter = function (spec) {
-				return htmlReporter.specFilter(spec);
-			};
+				jasmineEnv.updateInterval = 250;
+				jasmineEnv.addReporter(htmlReporter);
+				jasmineEnv.specFilter = function (spec) {
+					return htmlReporter.specFilter(spec);
+				};
 
-			var currentWindowOnload = window.onload;
-			window.onload = function () {
-				if (currentWindowOnload) {
-					currentWindowOnload();
-				}
-				jasmineEnv.execute();
-			};
+				var currentWindowOnload = window.onload;
+				window.onload = function () {
+					if (currentWindowOnload) {
+						currentWindowOnload();
+					}
+					jasmineEnv.execute();
+				};
 
-		})();
-	</script>
+			})();
+		</script>
 
-</head>
+	</head>
 
-<body>
-</body>
+	<body>
+	</body>
 </html>

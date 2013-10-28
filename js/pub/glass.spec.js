@@ -1,15 +1,15 @@
 /*global pub, describe, it, beforeEach, expect */
-describe('Glass', function() {
+describe('Glass', function () {
 	'use strict';
 
-    var glass;
+	var glass;
 
-    beforeEach(function() {
-        glass = new pub.Glass();
-    });
+	beforeEach(function () {
+		glass = new pub.Glass();
+	});
 
-    it('Is empty', function() {
-        expect(glass.quantity).toEqual(0);
-    });
+	it('Is empty', function () {
+		expect(glass.quantity).toEqual(0);
+	});
 
 });

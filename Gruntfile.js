@@ -24,9 +24,9 @@ module.exports = function (grunt) {
 				}
 			}
 		},
-		concat: {
+		concat : {
 			options : {
-				separator: '\n'
+				separator : '\n'
 			},
 			specs : {
 				src : [ '<%= cfg.app.spec %>' ],
@@ -43,7 +43,7 @@ module.exports = function (grunt) {
 		uglify : {
 			dist : {
 				files : {
-					'<%= cfg.dist.min %>': [ '<%= cfg.dist.bundle %>' ]
+					'<%= cfg.dist.min %>' : [ '<%= cfg.dist.bundle %>' ]
 				},
 				options : {
 					// sourceMap : '<%= cfg.dist.dir %>/pub.min.map.js';

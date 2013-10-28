@@ -1,6 +1,6 @@
 /*global describe */
 
-describe('Pub', function() {
+describe('Pub', function () {
 	'use strict';
 
 });
