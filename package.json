@@ -38,8 +38,7 @@
       "almond": "github:jrburke/almond/0.2.6",
       "require": "github:jrburke/requirejs/2.1.9",
       "domReady": "github:requirejs/domReady/2.0.1",
-      "jasmine": "http://github.com/pivotal/jasmine/raw/master/dist/jasmine-standalone-1.3.1.zip",
-      "jasmineAdapter": "github:ibolmo/jasmine-jstd-adapter/1.1.2#src/JasmineAdapter.js"
+      "jasmine": "http://github.com/pivotal/jasmine/raw/master/dist/jasmine-standalone-1.3.1.zip"
     }
   }
 }
