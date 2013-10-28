@@ -39,6 +39,7 @@ Examples included:
     - [Clean task](https://github.com/gruntjs/grunt-contrib-clean) cleans the output directory
     - [JSHint task](https://github.com/gruntjs/grunt-contrib-jshint) validates application and tests
     - [UglifyJs task](https://github.com/gruntjs/grunt-contrib-uglify) minifies and generates source maps
+    - [Watch task + LiveReload](https://github.com/gruntjs/grunt-contrib-watch) watches for file changes and executes grunt tasks and live reloads the browser
   - [Gemnasium](https://gemnasium.com) automatically checks package.json for outdated packages
 
 Todo:
