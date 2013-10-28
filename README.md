@@ -31,15 +31,15 @@ Examples included:
     - [.travis.yml configuration reference](http://about.travis-ci.org/docs/user/build-configuration/)
     - [.travis.yml & package.json configuration for Karma](http://karma-runner.github.io/0.10/plus/travis.html)
   - [Grunt task runner](http://gruntjs.com/) to automate repetitive tasks
-    - [requirejs r.js task](https://github.com/jrburke/r.js) bundles application
-    - [concat task](https://github.com/gruntjs/grunt-contrib-concat) concatenates jasmine specs
-    - [clean task](https://github.com/gruntjs/grunt-contrib-clean) cleans the output directory
-    - [jshint task](https://github.com/gruntjs/grunt-contrib-jshint) validates application and tests
+    - [RequireJs r.js task](https://github.com/jrburke/r.js) bundles application
+    - [Concat task](https://github.com/gruntjs/grunt-contrib-concat) concatenates jasmine specs
+    - [Clean task](https://github.com/gruntjs/grunt-contrib-clean) cleans the output directory
+    - [JSHint task](https://github.com/gruntjs/grunt-contrib-jshint) validates application and tests
+    - [UglifyJs task](https://github.com/gruntjs/grunt-contrib-uglify) minifies and generates source maps
 
 Todo:
   - ES6 Module support
   - [Bower](https://github.com/bower/bower) package manager
-  - UglifyJs for minifying js + sourcemaps
   - Mocha + PhantomJs for headless browser functional testing (like Selenium)
   - Add EcmaScript3 support for IE8
   - Sauce Labs cross browser unit and functional testing
@@ -47,6 +47,7 @@ Todo:
   - Create a [Volo](http://volojs.org/) package
     - Use volo-ghdeploy to publish to GitHub Pages
   - [Version Badge](http://badge.fury.io/) to provide package version and link
+  - [Jasmine grunt task](grunt-contrib-jasmine) to run jasmine specs via grunt instead of karma
   
 Other:
   - [Local Tunnel](http://progrium.com/localtunnel) for sharing local web server (ex. testing on mobile device)
