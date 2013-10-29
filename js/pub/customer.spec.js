@@ -35,7 +35,11 @@ describe('Customer', function () {
 		expect(jug.quantity).toEqual(56);
 	});
 
-	it('Downs in one, the remaining beer is consumed', function () {
+	it('Drinks and then downs in one, the remaining beer is consumed', function () {
+		customer.drink(halfPint);
+		customer.drink(pint);
+		customer.drink(jug);
+
 		customer.downInOne(halfPint);
 		customer.downInOne(pint);
 		customer.downInOne(jug);
@@ -67,20 +71,6 @@ describe('Customer', function () {
 		customer.quaff(halfPint);
 		customer.quaff(pint);
 		customer.quaff(jug);
-
-		expect(halfPint.quantity).toEqual(0);
-		expect(pint.quantity).toEqual(0);
-		expect(jug.quantity).toEqual(0);
-	});
-
-	it('Cannot down in one from a beer that has already been consumed', function () {
-		customer.downInOne(halfPint);
-		customer.downInOne(pint);
-		customer.downInOne(jug);
-
-		customer.downInOne(halfPint);
-		customer.downInOne(pint);
-		customer.downInOne(jug);
 
 		expect(halfPint.quantity).toEqual(0);
 		expect(pint.quantity).toEqual(0);
