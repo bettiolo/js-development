@@ -17,7 +17,9 @@ define([], function () {
 
 	/** @param {number} consumedQuantity How much has been consumed in oz. */
 	Glass.prototype.consume = function (consumedQuantity) {
-		this.quantity -= consumedQuantity;
+		if (this.quantity > 0) {
+			this.quantity -= consumedQuantity;
+		}
 	};
 
 	/**
