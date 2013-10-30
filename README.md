@@ -47,7 +47,7 @@ Examples included:
 Todo:
   - ES6 Module support
   - [Bower](https://github.com/bower/bower) package manager
-  - Mocha + PhantomJs for headless browser functional testing (like Selenium)
+  - Mocha, CasperJs + PhantomJs for headless browser functional testing (like Selenium)
   - Add EcmaScript3 support for IE8
   - Sauce Labs cross browser unit and functional testing
   - Create a [Volo](http://volojs.org/) package
