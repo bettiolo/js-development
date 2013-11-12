@@ -65,3 +65,4 @@ Other:
   - [waffle.io](https://waffle.io) to [manage](https://waffle.io/bettiolo/js-development) development tasks
   - coveralls.io
   - codeship.io
+  - http://blanketjs.org/ checks test code coverage
