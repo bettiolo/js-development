@@ -67,3 +67,4 @@ Other:
   - codeship.io
   - http://blanketjs.org/ checks test code coverage
   - https://nodei.co/npm/*.png to get the npm package status image
+  - http://ci.testling.com/ runs javascript tests in multiple browsers
