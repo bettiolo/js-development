@@ -15,6 +15,7 @@ Examples included:
     - [ES5 Compatibility Table](http://kangax.github.io/es5-compat-table/) IE8 and older does not support `Object.create`
     - [Essential JavaScript Namespacing Patterns](http://addyosmani.com/blog/essential-js-namespacing/)
     - [Google javascript style guide](http://google-styleguide.googlecode.com/svn/trunk/javascriptguide.xml)
+    - [Values, Variables and Literals](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Values,_variables,_and_literals#Object_literals)
   - [Jasmine](http://pivotal.github.io/jasmine/) spec & test runner for unit testing
   - [JsHint](http://www.jshint.com) for enforcing coding style with .jshintrc
     - [.jshintrc options reference](http://www.jshint.com/docs/options/)
