@@ -8,6 +8,8 @@ JavaScript development workflow and tools
 
 Examples included:
   - [EcmaScript 5.1](http://www.ecma-international.org/ecma-262/5.1/) object oriented JavaScript with prototypal inheritance and base constructors with parameters
+    - [Introduction to Object Oriented Javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Introduction_to_Object-Oriented_JavaScript)
+    - [Learning JavaScript Design Patterns book](http://addyosmani.com/resources/essentialjsdesignpatterns/book/)
     - [MDN on inheritance](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Introduction_to_Object-Oriented_JavaScript#Inheritance)
     - [ES5 and ES6 inheritance video](http://www.youtube.com/watch?v=NyClWddeO_A)
     - [ES5 Compatibility Table](http://kangax.github.io/es5-compat-table/) IE8 and older does not support `Object.create`
@@ -59,7 +61,7 @@ Todo:
   - Templates grunt task replaces placeholders and generate output files
   - https://github.com/thomasboyt/grunt-microlib
   
-Other:
+Unsorted:
   - [Local Tunnel](http://progrium.com/localtunnel) for sharing local web server (ex. testing on mobile device)
   - CodeKit
   - component.io
@@ -70,3 +72,7 @@ Other:
   - https://nodei.co/npm/*.png to get the npm package status image
   - http://ci.testling.com/ runs javascript tests in multiple browsers
   - https://david-dm.org/
+  - http://www.letscodejavascript.com/
+  - http://www.objectplayground.com/
+  - https://github.com/khan4019/HighPerformanceJSandCSS
+  - http://davidshariff.com/js-quiz/
