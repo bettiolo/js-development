@@ -77,3 +77,4 @@ Unsorted:
   - http://www.objectplayground.com/
   - https://github.com/khan4019/HighPerformanceJSandCSS
   - http://davidshariff.com/js-quiz/
+  - https://github.com/mdevils/node-jscs
