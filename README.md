@@ -81,3 +81,6 @@ Unsorted:
   - http://jashkenas.github.io/docco/
   - http://browserify.org/
   - http://linemanjs.com
+  - http://javascriptweblog.wordpress.com/2011/02/07/truth-equality-and-javascript/
+  - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Bitwise_Operators
+  - http://javascript.info/tutorial/bubbling-and-capturing
