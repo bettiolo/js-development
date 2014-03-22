@@ -80,3 +80,4 @@ Unsorted:
   - https://github.com/mdevils/node-jscs
   - http://jashkenas.github.io/docco/
   - http://browserify.org/
+  - http://linemanjs.com
