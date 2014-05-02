@@ -65,10 +65,10 @@ Todo:
 Unsorted:
   - [Local Tunnel](http://progrium.com/localtunnel) for sharing local web server (ex. testing on mobile device)
   - CodeKit
-  - component.io
+  - http://component.io
   - [waffle.io](https://waffle.io) to [manage](https://waffle.io/bettiolo/js-development) development tasks
-  - coveralls.io
-  - codeship.io
+  - http://coveralls.io
+  - http://codeship.io
   - http://blanketjs.org/ checks test code coverage
   - https://nodei.co/npm/*.png to get the npm package status image
   - http://ci.testling.com/ runs javascript tests in multiple browsers
@@ -84,3 +84,4 @@ Unsorted:
   - http://javascriptweblog.wordpress.com/2011/02/07/truth-equality-and-javascript/
   - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Bitwise_Operators
   - http://javascript.info/tutorial/bubbling-and-capturing
+  - http://drone.io
