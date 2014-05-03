@@ -85,3 +85,4 @@ Unsorted:
   - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Bitwise_Operators
   - http://javascript.info/tutorial/bubbling-and-capturing
   - http://drone.io
+  - https://github.com/boennemann/badges All the badges in one page
