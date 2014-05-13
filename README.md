@@ -87,3 +87,7 @@ Unsorted:
   - http://drone.io
   - https://github.com/boennemann/badges All the badges in one page
   - https://github.com/Munter/grunt-reduce
+  - https://github.com/mozilla/brick/issues
+  - http://www.x-tags.org/docs
+  - http://www.polymer-project.org/
+  - http://www.html5rocks.com/en/tutorials/webcomponents/imports/
